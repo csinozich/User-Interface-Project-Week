@@ -1,23 +1,104 @@
-  html {
-    background-color: @background;
-  }
+html {
+  background-color: @background;
+}
 
-  header {
-    background-image: url('../img/home/home-jumbotron.png');
-    background-size: 100% 75%;
-    background-repeat: no-repeat;
-    height: 600px;
+header {
+  background-image: url('../img/home/home-jumbotron.png');
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  padding: 25vw 5vw 40vw 10vw;
+}
+
+.main-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+
+  .content {
     width: 100%;
-    padding: 25vw 5vw 40vw 10vw;
-  }
-
-  .main-content {
-    width: 80%;
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 100px;
 
-    .content {
-      width: 70%;
+    .content-section {
+      width: 50%;
+    }
+
+    h2 {
+      margin: 20px 0;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    button {
+      height: 5rem;
+      width: 14rem;
+      border: 1px solid @button-border;
+      background-color: @white;
+      font-size: 1.6rem;
+    }
+
+    button:hover {
+      height: 6rem;
+      width: 15rem;
     }
   }
+
+  .second-content {
+    flex-direction: row-reverse;
+  }
+}
+
+
+.projects {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .example-project {
+
+    .project-header {
+
+      h3 {
+        font-size: 2.8rem;
+        background-color: @light-gray;
+        height: 100px;
+        width: 350px;
+        border: 1px solid @white;
+        position: relative;
+        top: -60px;
+        left: 660px;
+        z-index: 2;
+        text-align: center;
+        padding-top: 36px;
+        letter-spacing: 0.6rem;
+
+        #middle-header {
+          position: relative;
+          right: 660px;
+        }
+      }
+
+      img {
+        width: 100%;
+        z-index: 1;
+      }
+    }
+
+    .project-content {
+      width: 50%;
+      margin: 10px auto 60px;
+    }
+  }
+}

@@ -276,17 +276,30 @@ header {
   border: 1px solid #FFFFFF;
   position: relative;
   top: -60px;
-  left: 660px;
+  left: 652px;
   z-index: 2;
   text-align: center;
   padding-top: 36px;
   letter-spacing: 0.6rem;
 }
-.projects .example-project .project-header h3 #middle-header {
-  position: relative;
-  right: 660px;
-}
 .projects .example-project .project-header img {
+  width: 100%;
+  z-index: 1;
+}
+.projects .example-project .project-header-2 h3 {
+  font-size: 2.8rem;
+  background-color: #d8d8d8;
+  height: 100px;
+  width: 350px;
+  border: 1px solid #FFFFFF;
+  position: relative;
+  top: -60px;
+  z-index: 2;
+  text-align: center;
+  padding-top: 36px;
+  letter-spacing: 0.6rem;
+}
+.projects .example-project .project-header-2 img {
   width: 100%;
   z-index: 1;
 }

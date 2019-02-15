@@ -1,1 +1,83 @@
-  
+html {
+  background-color: @background;
+}
+
+header {
+  background-image: url('../img/services/services-jumbotron.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0;
+  height: 300px;
+
+  h1 {
+    font-size: 6.4rem;
+    padding-left: 5%;
+    padding-top: 15%;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+
+  .services-info {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.services-tabs {
+  width: 100%;
+
+  .tab-info {
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab-content {
+    display: none;
+    width: 75%;
+
+    .tab-header {
+      font-size: 2.4rem;
+      font-weight: bold;
+      padding: 20px 10px;
+    }
+  }
+
+  .tab-content-selected {
+    display: block;
+  }
+
+  .tab-links {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tab-link {
+    padding: 20px 25px;
+    font-size: 24px;
+    background-color: @white;
+    border: 1px solid black;
+    color: @dark-gray;
+    cursor: pointer;
+
+    &:hover {
+      background-color: @dark-gray;
+      color: @white;
+    }
+  }
+
+  .tab-link-selected {
+    z-index: 2;
+    background-color: @blue;
+    color: @white;
+  }
+}

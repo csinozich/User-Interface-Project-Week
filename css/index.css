@@ -357,3 +357,73 @@ header {
   width: 50%;
   margin: 10px auto 60px;
 }
+html {
+  background-color: #FFFFFF;
+}
+header {
+  background-image: url('../img/services/services-jumbotron.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0;
+  height: 300px;
+}
+header h1 {
+  font-size: 6.4rem;
+  padding-left: 5%;
+  padding-top: 15%;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.info .services-info {
+  width: 70%;
+  margin: 0 auto;
+}
+.services-tabs {
+  width: 100%;
+}
+.services-tabs .tab-info {
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.services-tabs .tab-content {
+  display: none;
+  width: 75%;
+}
+.services-tabs .tab-content .tab-header {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+.services-tabs .tab-content-selected {
+  display: block;
+}
+.services-tabs .tab-links {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.services-tabs .tab-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  color: #222222;
+  cursor: pointer;
+}
+.services-tabs .tab-link:hover {
+  background-color: #222222;
+  color: #FFFFFF;
+}
+.services-tabs .tab-link-selected {
+  z-index: 2;
+  background-color: #5E9FB9;
+  color: #FFFFFF;
+}

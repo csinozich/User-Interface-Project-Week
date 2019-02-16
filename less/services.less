@@ -23,7 +23,7 @@ header {
   padding: 50px 0;
 
   .services-info {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
 }
@@ -34,19 +34,39 @@ header {
   .tab-info {
     width: 100%;
     margin: 0 auto;
-    height: 300px;
+    height: 100%;
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
   }
 
   .tab-content {
     display: none;
-    width: 75%;
+    width: 71%;
 
-    .tab-header {
-      font-size: 2.4rem;
-      font-weight: bold;
-      padding: 20px 10px;
+    .tab-all {
+      display: flex;
+      flex-direction: row;
+      padding: 30px;
+
+      .tab-section {
+        width: 50%;
+        padding-left: 30px;
+
+        .tab-header {
+          font-size: 2.4rem;
+          font-weight: bold;
+          padding: 20px 0;
+        }
+
+        .services-mobile {
+          display: none;
+        }
+      }
+
+      .tab-img {
+        padding-left: 50px;
+      }
     }
   }
 
@@ -55,7 +75,7 @@ header {
   }
 
   .tab-links {
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;

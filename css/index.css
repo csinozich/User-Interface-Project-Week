@@ -379,7 +379,7 @@ header h1 {
   padding: 50px 0;
 }
 .info .services-info {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 .services-tabs {
@@ -388,24 +388,40 @@ header h1 {
 .services-tabs .tab-info {
   width: 100%;
   margin: 0 auto;
-  height: 300px;
+  height: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 .services-tabs .tab-content {
   display: none;
-  width: 75%;
+  width: 71%;
 }
-.services-tabs .tab-content .tab-header {
+.services-tabs .tab-content .tab-all {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+.services-tabs .tab-content .tab-all .tab-section {
+  width: 50%;
+  padding-left: 30px;
+}
+.services-tabs .tab-content .tab-all .tab-section .tab-header {
   font-size: 2.4rem;
   font-weight: bold;
-  padding: 20px 10px;
+  padding: 20px 0;
+}
+.services-tabs .tab-content .tab-all .tab-section .services-mobile {
+  display: none;
+}
+.services-tabs .tab-content .tab-all .tab-img {
+  padding-left: 50px;
 }
 .services-tabs .tab-content-selected {
   display: block;
 }
 .services-tabs .tab-links {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;

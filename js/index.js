@@ -1,4 +1,4 @@
-// JS goes here
+// Services Tabs
 
 class TabLink {
 
@@ -39,3 +39,29 @@ class TabContent {
 
 const links = document.querySelectorAll('.tab-link')
                       .forEach(link => new TabLink(link));
+
+
+//End Services tabs
+
+//Navigation
+
+class Dropdown {
+
+  constructor(element) {
+    this.element = element;
+    this.button = this.element.querySelector('.dropdown-button');
+    this.content = this.element.querySelector('.expanded');
+    this.button.addEventListener('click', () => {
+      this.toggleMenu();
+    })
+  }
+
+  toggleMenu() {
+    this.content.classList.toggle('expanded-hidden');
+  }
+}
+
+let dropdownMenu = document.querySelectorAll('.dropdown')
+                           .forEach(dropdown => new Dropdown(dropdown));
+
+//End Navigation

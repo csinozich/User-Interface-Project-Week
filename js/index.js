@@ -50,14 +50,13 @@ class Dropdown {
   constructor(element) {
     this.element = element;
     this.button = this.element.querySelector('.dropdown-button');
-    this.content = this.element.querySelector('.expanded');
     this.button.addEventListener('click', () => {
       this.toggleMenu();
     })
   }
 
   toggleMenu() {
-    this.content.classList.toggle('expanded-hidden');
+    document.querySelector('.expanded').classList.toggle('expanded-hidden')
   }
 }
 

@@ -210,7 +210,7 @@ img {
   align-items: center;
   padding: 0 84px;
   height: 50px;
-  z-index: 3;
+  z-index: 4;
 }
 .dropdown .expanded {
   background-color: #97a4b0;
@@ -218,11 +218,13 @@ img {
   width: 100vw;
   display: flex;
   position: absolute;
+  right: 0%;
+  top: 0%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  z-index: 2;
+  z-index: 3;
   opacity: 0.8;
 }
 .dropdown .expanded .expanded-link {

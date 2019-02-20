@@ -12,6 +12,7 @@ header {
 
     @media @phone {
       height: 400px;
+      background-image: url('../img/home/home-mobile-jumbotron.png')
     }
 
     .head {
@@ -31,6 +32,10 @@ header {
   margin: 0 auto;
   justify-content: center;
 
+  @media @phone {
+    width: 90%;
+  }
+
   .content {
     width: 100%;
     display: flex;
@@ -43,6 +48,27 @@ header {
 
     .content-section {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      .desktop-img {
+        width: 90%;
+
+        @media @phone {
+          display: none;
+        }
+      }
+
+      .mobile-img {
+        display: none;
+        width: 100%;
+
+        @media @phone {
+          display: block;
+        }
+      }
     }
 
     h2 {
@@ -59,6 +85,10 @@ header {
       border: 1px solid @button-border;
       background-color: @white;
       font-size: 1.6rem;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     button:hover {
@@ -82,8 +112,16 @@ header {
   flex-direction: column;
   margin: 0 auto;
 
+  @media @phone {
+    width: 100%;
+  }
+
   h2 {
     margin-bottom: 30px;
+
+    @media @phone {
+      padding-left: 20px;
+    }
   }
 
   .example-project {
@@ -93,25 +131,45 @@ header {
       h3 {
         font-size: 2.8rem;
         background-color: @light-gray;
-        height: 100px;
-        width: 350px;
+        height: 10rem;
+        width: 35rem;
         border: 1px solid @white;
         position: relative;
         top: -60px;
-        left: 652px;
+        left: 65.5%;
         z-index: 2;
         text-align: center;
         padding-top: 36px;
         letter-spacing: 0.6rem;
+
+        @media @phone {
+        top: -50px;
+        left: 6.5%;
+        }
       }
 
-      img {
+      .desktop-project-img {
         width: 100%;
         z-index: 1;
+
+        @media @phone {
+          display: none;
+        }
+      }
+
+      .mobile-project-img {
+        display: none;
+        width: 100%;
+
+        @media @phone {
+          display: block;
+          height: 230px;
+        }
       }
     }
 
     .project-header-2 {
+
       h3 {
         font-size: 2.8rem;
         background-color: @light-gray;
@@ -124,17 +182,39 @@ header {
         text-align: center;
         padding-top: 36px;
         letter-spacing: 0.6rem;
+
+        @media @phone {
+          left: 6.5%;
+        }
       }
 
-      img {
+      .desktop-project-img {
         width: 100%;
         z-index: 1;
+
+        @media @phone {
+          display: none;
+        }
+      }
+
+      .mobile-project-img {
+        display: none;
+        width: 100%;
+
+        @media @phone {
+          display: block;
+          height: 230px;
+        }
       }
     }
 
     .project-content {
       width: 50%;
       margin: 10px auto 60px;
+
+      @media @phone {
+        width: 80%;
+      }
     }
   }
 }

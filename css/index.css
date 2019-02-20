@@ -189,11 +189,10 @@ img {
   line-height: 2.4rem;
   color: #FFFFFF;
 }
-.footer-section > p {
-  font-weight: 200;
-  font-size: 1.4rem;
-  line-height: 2.6rem;
-  color: #FFFFFF;
+@media only screen and (max-width: 500px) {
+  .footer-header {
+    font-size: 2.4rem;
+  }
 }
 .dropdown {
   height: 50px;
@@ -211,6 +210,11 @@ img {
   padding: 0 84px;
   height: 50px;
   z-index: 4;
+}
+@media only screen and (max-width: 500px) {
+  .dropdown .nav-bar {
+    padding: 0 5px;
+  }
 }
 .dropdown .expanded {
   background-color: #97a4b0;
@@ -254,21 +258,54 @@ footer .footer-info {
   width: 80%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 500px) {
+  footer .footer-info {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 footer .footer-info .footer-section {
   width: 20%;
   padding: 20px;
 }
+@media only screen and (max-width: 500px) {
+  footer .footer-info .footer-section {
+    width: 100vw;
+  }
+}
 footer .footer-info .footer-section .footer-header {
   line-height: 1.5;
 }
+footer .footer-info .footer-section p {
+  font-weight: 100;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 500px) {
+  footer .footer-info .footer-section p {
+    font-size: 1.6rem;
+  }
+}
 footer .footer-info .first-section {
   width: 40%;
+}
+@media only screen and (max-width: 500px) {
+  footer .footer-info .first-section {
+    width: 100%;
+  }
 }
 footer .footer-info .first-section form input[type=text] {
   width: 80%;
   height: 40px;
   border-radius: 5px;
   margin: 5px 0;
+}
+@media only screen and (max-width: 500px) {
+  footer .footer-info .first-section form input[type=text] {
+    width: 100%;
+    height: 50px;
+  }
 }
 footer .footer-info .first-section form textarea {
   display: block;
@@ -280,6 +317,11 @@ footer .footer-info .first-section form ::placeholder {
 }
 footer .footer-info .first-section .email {
   font-size: 1.2rem;
+}
+@media only screen and (max-width: 500px) {
+  footer .footer-info .first-section .email {
+    font-size: 1.4rem;
+  }
 }
 footer .copyright {
   width: 80%;
@@ -303,6 +345,7 @@ header {
 @media only screen and (max-width: 500px) {
   header {
     height: 400px;
+    background-image: url('../img/home/home-mobile-jumbotron.png');
   }
 }
 @media only screen and (max-width: 500px) {
@@ -319,6 +362,11 @@ header {
   margin: 0 auto;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .main-content {
+    width: 90%;
+  }
+}
 .main-content .content {
   width: 100%;
   display: flex;
@@ -333,6 +381,28 @@ header {
 .main-content .content .content-section {
   width: 50%;
 }
+@media only screen and (max-width: 500px) {
+  .main-content .content .content-section {
+    width: 100%;
+  }
+}
+.main-content .content .content-section .desktop-img {
+  width: 90%;
+}
+@media only screen and (max-width: 500px) {
+  .main-content .content .content-section .desktop-img {
+    display: none;
+  }
+}
+.main-content .content .content-section .mobile-img {
+  display: none;
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .main-content .content .content-section .mobile-img {
+    display: block;
+  }
+}
 .main-content .content h2 {
   margin: 20px 0;
 }
@@ -345,6 +415,11 @@ header {
   border: 1px solid #222222;
   background-color: #FFFFFF;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 500px) {
+  .main-content .content button {
+    width: 100%;
+  }
 }
 .main-content .content button:hover {
   font-weight: bold;
@@ -363,26 +438,57 @@ header {
   flex-direction: column;
   margin: 0 auto;
 }
+@media only screen and (max-width: 500px) {
+  .projects {
+    width: 100%;
+  }
+}
 .projects h2 {
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .projects h2 {
+    padding-left: 20px;
+  }
 }
 .projects .example-project .project-header h3 {
   font-size: 2.8rem;
   background-color: #d8d8d8;
-  height: 100px;
-  width: 350px;
+  height: 10rem;
+  width: 35rem;
   border: 1px solid #FFFFFF;
   position: relative;
   top: -60px;
-  left: 652px;
+  left: 65.5%;
   z-index: 2;
   text-align: center;
   padding-top: 36px;
   letter-spacing: 0.6rem;
 }
-.projects .example-project .project-header img {
+@media only screen and (max-width: 500px) {
+  .projects .example-project .project-header h3 {
+    top: -50px;
+    left: 6.5%;
+  }
+}
+.projects .example-project .project-header .desktop-project-img {
   width: 100%;
   z-index: 1;
+}
+@media only screen and (max-width: 500px) {
+  .projects .example-project .project-header .desktop-project-img {
+    display: none;
+  }
+}
+.projects .example-project .project-header .mobile-project-img {
+  display: none;
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .projects .example-project .project-header .mobile-project-img {
+    display: block;
+    height: 230px;
+  }
 }
 .projects .example-project .project-header-2 h3 {
   font-size: 2.8rem;
@@ -397,13 +503,38 @@ header {
   padding-top: 36px;
   letter-spacing: 0.6rem;
 }
-.projects .example-project .project-header-2 img {
+@media only screen and (max-width: 500px) {
+  .projects .example-project .project-header-2 h3 {
+    left: 6.5%;
+  }
+}
+.projects .example-project .project-header-2 .desktop-project-img {
   width: 100%;
   z-index: 1;
+}
+@media only screen and (max-width: 500px) {
+  .projects .example-project .project-header-2 .desktop-project-img {
+    display: none;
+  }
+}
+.projects .example-project .project-header-2 .mobile-project-img {
+  display: none;
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .projects .example-project .project-header-2 .mobile-project-img {
+    display: block;
+    height: 230px;
+  }
 }
 .projects .example-project .project-content {
   width: 50%;
   margin: 10px auto 60px;
+}
+@media only screen and (max-width: 500px) {
+  .projects .example-project .project-content {
+    width: 80%;
+  }
 }
 html {
   background-color: #FFFFFF;

@@ -300,6 +300,18 @@ header {
   width: 100%;
   padding: 25vw 5vw 40vw 10vw;
 }
+@media only screen and (max-width: 500px) {
+  header {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header .head {
+    font-size: 10vw;
+    line-height: 6rem;
+    margin-bottom: 20px;
+  }
+}
 .main-content {
   width: 70%;
   display: flex;
@@ -312,6 +324,11 @@ header {
   display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
+}
+@media only screen and (max-width: 500px) {
+  .main-content .content {
+    flex-direction: column-reverse;
+  }
 }
 .main-content .content .content-section {
   width: 50%;
@@ -334,6 +351,11 @@ header {
 }
 .main-content .second-content {
   flex-direction: row-reverse;
+}
+@media only screen and (max-width: 500px) {
+  .main-content .second-content {
+    flex-direction: column-reverse;
+  }
 }
 .projects {
   width: 70%;

@@ -9,6 +9,19 @@ header {
   height: 600px;
   width: 100%;
   padding: 25vw 5vw 40vw 10vw;
+
+    @media @phone {
+      height: 400px;
+    }
+
+    .head {
+
+      @media @phone {
+        font-size: 10vw;
+        line-height: 6rem;
+        margin-bottom: 20px;
+      }
+    }
 }
 
 .main-content {
@@ -23,6 +36,10 @@ header {
     display: flex;
     justify-content: space-around;
     margin-bottom: 100px;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .content-section {
       width: 50%;
@@ -51,6 +68,10 @@ header {
 
   .second-content {
     flex-direction: row-reverse;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
   }
 }
 

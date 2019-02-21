@@ -547,10 +547,21 @@ html {
   padding: 0;
   height: 300px;
 }
+@media only screen and (max-width: 500px) {
+  .services-header {
+    background-image: url('../img/services/services-mobile-jumbotron.png');
+  }
+}
 .services-header h1 {
   font-size: 6.4rem;
   padding-left: 5%;
   padding-top: 15%;
+}
+@media only screen and (max-width: 500px) {
+  .services-header h1 {
+    font-size: 4.4rem;
+    padding-top: 50%;
+  }
 }
 .info {
   display: flex;
@@ -560,6 +571,11 @@ html {
 .info .services-info {
   width: 60%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  .info .services-info {
+    width: 90%;
+  }
 }
 .services-tabs {
   width: 100%;
@@ -576,25 +592,58 @@ html {
   display: none;
   width: 71%;
 }
+@media only screen and (max-width: 500px) {
+  .services-tabs .tab-content {
+    width: 90%;
+  }
+}
 .services-tabs .tab-content .tab-all {
   display: flex;
   flex-direction: row;
   padding: 30px;
 }
+@media only screen and (max-width: 500px) {
+  .services-tabs .tab-content .tab-all {
+    flex-direction: column;
+    padding: 0;
+  }
+}
 .services-tabs .tab-content .tab-all .tab-section {
   width: 50%;
   padding-left: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .services-tabs .tab-content .tab-all .tab-section {
+    width: 90%;
+    padding-left: 10;
+  }
 }
 .services-tabs .tab-content .tab-all .tab-section .tab-header {
   font-size: 2.4rem;
   font-weight: bold;
   padding: 20px 0;
 }
+@media only screen and (max-width: 500px) {
+  .services-tabs .tab-content .tab-all .tab-section .services-desktop {
+    display: none;
+  }
+}
 .services-tabs .tab-content .tab-all .tab-section .services-mobile {
   display: none;
 }
+@media only screen and (max-width: 500px) {
+  .services-tabs .tab-content .tab-all .tab-section .services-mobile {
+    display: block;
+    width: 100%;
+  }
+}
 .services-tabs .tab-content .tab-all .tab-img {
   padding-left: 50px;
+}
+@media only screen and (max-width: 500px) {
+  .services-tabs .tab-content .tab-all .tab-img {
+    padding-left: 25px;
+  }
 }
 .services-tabs .tab-content-selected {
   display: block;
@@ -605,6 +654,12 @@ html {
   display: flex;
   justify-content: space-around;
 }
+@media only screen and (max-width: 500px) {
+  .services-tabs .tab-links {
+    flex-direction: column;
+    width: 90%;
+  }
+}
 .services-tabs .tab-link {
   padding: 20px 25px;
   font-size: 24px;
@@ -612,6 +667,14 @@ html {
   border: 1px solid black;
   color: #222222;
   cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  .services-tabs .tab-link {
+    margin: 10px auto;
+    height: 65px;
+    width: 100%;
+    text-align: center;
+  }
 }
 .services-tabs .tab-link:hover {
   background-color: #222222;

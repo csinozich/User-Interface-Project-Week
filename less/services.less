@@ -10,10 +10,19 @@ html {
   padding: 0;
   height: 300px;
 
+  @media @phone {
+    background-image: url('../img/services/services-mobile-jumbotron.png')
+  }
+
   h1 {
     font-size: 6.4rem;
     padding-left: 5%;
     padding-top: 15%;
+
+    @media @phone {
+      font-size: 4.4rem;
+      padding-top: 50%;
+    }
   }
 }
 
@@ -25,6 +34,10 @@ html {
   .services-info {
     width: 60%;
     margin: 0 auto;
+
+    @media @phone {
+      width: 90%;
+    }
   }
 }
 
@@ -44,14 +57,28 @@ html {
     display: none;
     width: 71%;
 
+    @media @phone {
+      width: 90%;
+    }
+
     .tab-all {
       display: flex;
       flex-direction: row;
       padding: 30px;
 
+      @media @phone {
+        flex-direction: column;
+        padding: 0;
+      }
+
       .tab-section {
         width: 50%;
         padding-left: 30px;
+
+        @media @phone {
+          width: 90%;
+          padding-left: 10;
+        }
 
         .tab-header {
           font-size: 2.4rem;
@@ -59,13 +86,29 @@ html {
           padding: 20px 0;
         }
 
+        .services-desktop {
+
+          @media @phone {
+            display: none;
+          }
+        }
+
         .services-mobile {
           display: none;
+
+          @media @phone {
+            display: block;
+            width: 100%;
+          }
         }
       }
 
       .tab-img {
         padding-left: 50px;
+
+        @media @phone {
+          padding-left: 25px;
+        }
       }
     }
   }
@@ -79,6 +122,11 @@ html {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+
+    @media @phone {
+      flex-direction: column;
+      width: 90%;
+    }
   }
 
   .tab-link {
@@ -88,6 +136,13 @@ html {
     border: 1px solid black;
     color: @dark-gray;
     cursor: pointer;
+
+    @media @phone {
+      margin: 10px auto;
+      height: 65px;
+      width: 100%;
+      text-align: center;
+    }
 
     &:hover {
       background-color: @dark-gray;

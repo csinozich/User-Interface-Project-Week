@@ -201,6 +201,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 5px 40px;
+  width: 100%;
 }
 .dropdown .nav-bar {
   width: 100%;
@@ -210,6 +211,10 @@ img {
   padding: 0 84px;
   height: 50px;
   z-index: 4;
+  position: fixed;
+  left: -2px;
+  background-color: #97a4b0;
+  opacity: 0.8;
 }
 @media only screen and (max-width: 500px) {
   .dropdown .nav-bar {
@@ -221,7 +226,7 @@ img {
   height: 100vh;
   width: 100vw;
   display: flex;
-  position: absolute;
+  position: fixed;
   right: 0%;
   top: 0%;
   flex-direction: column;

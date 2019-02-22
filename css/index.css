@@ -212,7 +212,7 @@ img {
   height: 50px;
   z-index: 4;
   position: fixed;
-  left: -2px;
+  left: 0;
   background-color: #97a4b0;
   opacity: 0.8;
 }

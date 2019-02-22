@@ -34,9 +34,9 @@
 	<div class='contact-section-1'>
 		<h2>Get In Touch</h2>
 
-		<form>
+		<form class='contact-form'>
 			<p>Email Address</p><br>
-			<input type='text' placeholder='Enter email'></input><br>
+			<input type='text' placeholder='Enter email' class='contact-form-email-input'></input><br>
 			<p class='email'>We'll never share your email with anyone else.</p>
 
 			<label>How many buildings do you need planned?</label><br>
@@ -49,13 +49,25 @@
 				</select><br>
 
 			<label>Provide a brief overview of your project needs:</label>
-				<textarea id='overview' rows='6' cols='40'></textarea><br>
+				<textarea id='overview' rows='10' cols='40'></textarea><br>
 
-			<input type='radio' class='person-id' value='small-business' checked>I am a small business</br>
-			<input type='radio' class='residential'>I am a residential owner</br>
-			<input type='radio' class='corporation'>I am a corporation</br>
+			<div class='radio-input'>
+				<div class='radio-selection'>
+					<input type='radio' name='person-id' checked>
+					<span>I am a small business</span></br>
+				</div>
+				<div class='radio-selection'>
+					<input type='radio' name='person-id'>
+					<span>I am a residential owner</span></br>
+				</div>
+				<div class='radio-selection'>
+					<input type='radio' name='person-id'>
+					<span>I am a corporation</span></br>
+				</div>
+			</div>
 
 			<button class='submit'>Submit</button>
+		</form>
 	</div>
 	<div class='contact-section-2'>
 		<h2>Where We Work</h2>
@@ -87,7 +99,7 @@
 			<h4 class='footer-header'>Let’s talk:</h4>
 
 			<form>
-				<input type='text' placeholder='Enter email'><br>
+				<input type='text' placeholder='Enter email' class='footer-email'><br>
 			</form>
 
 			<p class='email'>We'll never share your email with anyone else.</p>

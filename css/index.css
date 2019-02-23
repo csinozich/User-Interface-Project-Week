@@ -697,25 +697,52 @@ html {
   background-size: 100% 100%;
   padding: 0;
 }
+@media only screen and (max-width: 500px) {
+  .contact-header {
+    background-image: url('../img/contact/contact-mobile-jumbotron.png');
+  }
+}
 .contact-header h1 {
   font-size: 6.4rem;
   padding-left: 5%;
   padding-top: 15%;
+}
+@media only screen and (max-width: 500px) {
+  .contact-header h1 {
+    padding-top: 50%;
+    font-size: 4.4rem;
+  }
 }
 .contact-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}
 .contact-content .contact-section-1 {
   width: 70%:
     padding: 40px 20px;
+}
+@media only screen and (max-width: 500px) {
+  .contact-content .contact-section-1 {
+    width: 100%;
+    margin: 20px;
+  }
 }
 .contact-content .contact-section-1 h2 {
   padding: 40px 0px;
 }
 .contact-content .contact-section-1 .contact-form {
   width: 80%;
+}
+@media only screen and (max-width: 500px) {
+  .contact-content .contact-section-1 .contact-form {
+    width: 100%;
+  }
 }
 .contact-content .contact-section-1 .contact-form .contact-form-email-input {
   width: 90%;
@@ -762,9 +789,19 @@ html {
   margin-bottom: 50px;
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 500px) {
+  .contact-content .contact-section-1 .contact-form button {
+    width: 90%;
+  }
+}
 .contact-content .contact-section-2 {
   width: 20%;
   padding: 40px 20px;
+}
+@media only screen and (max-width: 500px) {
+  .contact-content .contact-section-2 {
+    width: 90%;
+  }
 }
 .contact-content .contact-section-2 h2 {
   padding-bottom: 20px;

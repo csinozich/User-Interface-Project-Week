@@ -4,10 +4,19 @@
   background-size: 100% 100%;
   padding: 0;
 
+  @media @phone {
+    background-image: url('../img/contact/contact-mobile-jumbotron.png')
+  }
+
   h1 {
     font-size: 6.4rem;
     padding-left: 5%;
     padding-top: 15%;
+
+    @media @phone {
+      padding-top: 50%;
+      font-size: 4.4rem;
+    }
   }
 }
 
@@ -16,9 +25,18 @@
   flex-direction: row;
   justify-content: center;
 
+  @media @phone {
+    flex-direction: column;
+  }
+
   .contact-section-1 {
     width: 70%:
     padding: 40px 20px;
+
+    @media @phone {
+      width: 100%;
+      margin: 20px;
+    }
 
     h2 {
       padding: 40px 0px;
@@ -26,6 +44,10 @@
 
     .contact-form {
       width: 80%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       .contact-form-email-input {
         width: 90%;
@@ -79,6 +101,10 @@
         border: 1px solid black;
         margin-bottom: 50px;
         font-size: 1.6rem;
+
+        @media @phone {
+          width: 90%;
+        }
       }
     }
   }
@@ -86,6 +112,10 @@
   .contact-section-2 {
     width: 20%;
     padding: 40px 20px;
+
+    @media @phone {
+      width: 90%;
+    }
 
     h2 {
       padding-bottom: 20px;

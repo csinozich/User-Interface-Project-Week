@@ -1,0 +1,147 @@
+.contact-header {
+  background-image: url('../img/contact/contact-jumbotron.png');
+  height: 300px;
+  background-size: 100% 100%;
+  padding: 0;
+
+  @media @phone {
+    background-image: url('../img/contact/contact-mobile-jumbotron.png')
+  }
+
+  h1 {
+    font-size: 6.4rem;
+    padding-left: 5%;
+    padding-top: 15%;
+
+    @media @phone {
+      padding-top: 50%;
+      font-size: 4.4rem;
+    }
+  }
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media @phone {
+    flex-direction: column;
+  }
+
+  .contact-section-1 {
+    width: 70%:
+    padding: 40px 20px;
+
+    @media @phone {
+      width: 100%;
+      margin: 20px;
+    }
+
+    h2 {
+      padding: 40px 0px;
+    }
+
+    .contact-form {
+      width: 80%;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      .contact-form-email-input {
+        width: 90%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid @light-gray;
+        margin-bottom: 10px;
+      }
+
+      ::placeholder {
+        font-size: 1.6rem;
+        padding-left: 10px;
+      }
+
+      .email {
+        font-size: 1.2rem;
+        color: @medium-gray;
+        padding-bottom: 40px;
+      }
+
+      label {
+        font-size: 1.6rem;
+      }
+
+      select {
+        width: 90%;
+        border: 1px solid @light-gray;
+        height: 40px;
+        margin: 10px 0 40px 0;
+      }
+
+      #overview {
+        width: 90%;
+        border: 1px solid @light-gray;
+        height: 70%;
+        margin: 10px 0;
+      }
+
+      .radio-input {
+        padding: 20px 0;
+
+        .radio-selection {
+          font-size: 1.6rem;
+          margin: 5px 0;
+        }
+      }
+
+      button {
+        width: 40%;
+        height: 40px;
+        border: 1px solid black;
+        margin-bottom: 50px;
+        font-size: 1.6rem;
+
+        @media @phone {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .contact-section-2 {
+    width: 20%;
+    padding: 40px 20px;
+
+    @media @phone {
+      width: 90%;
+    }
+
+    h2 {
+      padding-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 2.2rem;
+      padding: 20px 0;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.footer-email {
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid @light-gray;
+  font-size: 1.6rem;
+  margin: 5px 0;
+  padding-left: 5px;
+  opacity: 0.8;
+
+  @mobile @phone {
+    width: 100%;
+    height: 50px;
+  }
+}

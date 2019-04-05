@@ -1,0 +1,64 @@
+.dropdown {
+  height: 50px;
+  background-color: @nav-background-closed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  width: 100%;
+
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 84px;
+    height: 50px;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    background-color: @nav-background-closed;
+    opacity: 0.8;
+
+    @media @phone {
+      padding: 0 5px;
+    }
+  }
+
+  .expanded {
+    background-color: @blue-gray;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 3;
+    opacity: 0.8;
+
+
+    .expanded-link {
+      font-weight: bold;
+      font-size: 4.8rem;
+      line-height: 8.5rem;
+      color: @white;
+      text-decoration: none;
+
+      &:hover {
+        color: @dark-gray;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .expanded-hidden {
+    display: none;
+
+  }
+
+
+}

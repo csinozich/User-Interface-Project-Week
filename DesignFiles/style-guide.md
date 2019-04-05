@@ -5,7 +5,7 @@ Font family can be found here: https://fonts.google.com/specimen/Roboto
 
 ### GENERAL STYLES
 - Background: #FFFFFF
-- Color: #222222
+- Color: #222222  
 - Font Family: Roboto, Arial, sans-serif
 
 ## Page Specific
@@ -19,7 +19,7 @@ Font family can be found here: https://fonts.google.com/specimen/Roboto
 - Tab Hover background: #222222
 - Tab Hover color: #FFF;
 
-## Footer 
+## Footer
 Background: #828282
 
 ### General Text
@@ -37,7 +37,7 @@ Background: #828282
 - Font Weight: Bold
 - Font Size: 28px
 - Color: #222222
-   
+
 ### Footer Headings
 - Font Weight: Regular
 - Font Size: 20px

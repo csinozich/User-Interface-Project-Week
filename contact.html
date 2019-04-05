@@ -12,49 +12,123 @@
 
 <body>
 
-	<h1>Contact</h1>
+	<nav>
+		<div class='dropdown'>
+			<div class='nav-bar'>
+				<h1 class='logo' href='./index.html'>S&J</h1>
+				<img class='dropdown-button' src='./img/nav-hamburger.png'>
+			</div>
+			<div class='expanded expanded-hidden'>
+				<a class='expanded-link' href='./index.html'>Home</a>
+				<a class='expanded-link' href='./services.html'>Services</a>
+				<a class='expanded-link' href='./contact.html'>Contact</a>
+			</div>
+		</div>
+	</nav>
 
-<!-- Contactd Us Content 
-  Contact Us
-  
-Get In Touch
+<header class='contact-header'>
+	<h1>Contact Us</h1>
+</header>
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
+<container class='contact-content'>
+	<div class='contact-section-1'>
+		<h2>Get In Touch</h2>
 
-How many buildings do you need planned?
-1-5
+		<form class='contact-form'>
+			<p>Email Address</p><br>
+			<input type='text' placeholder='Enter email' class='contact-form-email-input'></input><br>
+			<p class='email'>We'll never share your email with anyone else.</p>
 
-Provide a brief overview of your project needs:
+			<label>How many buildings do you need planned?</label><br>
+				<select id='building-number'>
+					<option value = '1'>1</option>
+					<option value = '2'>2</option>
+					<option value = '3'>3</option>
+					<option value = '4'>4</option>
+					<option value = '5'>5</option>
+				</select><br>
 
-I am a small business
-I am a residential owner
-I am a corporation
+			<label>Provide a brief overview of your project needs:</label>
+				<textarea id='overview' rows='10' cols='40'></textarea><br>
 
-Submit
+			<div class='radio-input'>
+				<div class='radio-selection'>
+					<input type='radio' name='person-id' checked>
+					<span>I am a small business</span></br>
+				</div>
+				<div class='radio-selection'>
+					<input type='radio' name='person-id'>
+					<span>I am a residential owner</span></br>
+				</div>
+				<div class='radio-selection'>
+					<input type='radio' name='person-id'>
+					<span>I am a corporation</span></br>
+				</div>
+			</div>
 
-Where We Work
+			<button class='submit'>Submit</button>
+		</form>
+	</div>
+	<div class='contact-section-2'>
+		<h2>Where We Work</h2>
 
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
+		<h4>New York</h4>
+		<p>123 Lane<br>
+			 Suite 100<br>
+			 Albany, NY 12345<br>
+			 202 555 0144</p>
 
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
+		<h4>Florida</h4>
+		<p>Ocean Drive<br>
+			 Suite 201<br>
+			 Orlando, FL 22345<br>
+			 502 555 0144<br>
 
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
+		<h4>California</h4>
+		<p>Mountain Street<br>
+			 Suite 105<br>
+			 San Diego, CA 22345<br>
+			 702 555 0144</p>
+	</div>
+</container>
 
--->
+<footer>
+	<div class='footer-info'>
+		<div class='footer-section first-section'>
+			<h4 class='footer-header'>Interested in starting a project?</h4>
+			<h4 class='footer-header'>Let’s talk:</h4>
+
+			<form>
+				<input type='text' placeholder='Enter email' class='footer-email'><br>
+			</form>
+
+			<p class='email'>We'll never share your email with anyone else.</p>
+		</div>
+		<div class='footer-section'>
+
+			<h4 class='footer-header'>New York</h4>
+			<p>123 Lane<br>
+				 Suite 100</br>
+				 Albany, NY 12345</br>
+				 202 555 0144</p>
+		</div>
+		<div class='footer-section'>
+			<h4 class='footer-header'>Florida</h4>
+			<p>Ocean Drive<br>
+				 Suite 201<br>
+				 Orlando, FL 22345<br>
+				 502 555 0144</p>
+		</div>
+		<div class='footer-section'>
+			<h4 class='footer-header'>California</h4>
+			<p>Mountain Street<br>
+				 Suite 105<br>
+				 San Diego, CA 22345<br>
+				 702 555 0144</p>
+		</div>
+	</div>
+	<container class='copyright'>Copyright © 2018 Smith and Jones</container>
+</footer>
 
 	<script src="js/index.js"></script>
 </body>
